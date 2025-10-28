@@ -7,6 +7,11 @@ import bruchetta from "../assets/bruchetta.svg"
 const Main = () => {
   return (
     <div className="container">
+      <section className='hero'>
+        <h1>Little Lemon</h1>
+        <h3>Chicaho</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at iaculis dui. Praesent elementum sit amet nulla ac venenatis. Morbi venenatis congue sapien sollicitudin commodo.</p>
+      </section>
       <section className="specials">
         <Card 
           title="Greek Salad" 
