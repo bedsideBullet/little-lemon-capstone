@@ -1,4 +1,6 @@
 .header, .specials, .testimonials, .footer {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   margin-bottom: 20px;
   border-radius: 16px;
@@ -19,9 +21,25 @@
   color: #49E5E7;
 }
 
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
 .card h3 {
   font-size: 18pt;
   color: #F4CE14;
+}
+
+.card, img {
+  width: 100px;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: #000;
+  font-weight: 700;
 }
 
 p {
