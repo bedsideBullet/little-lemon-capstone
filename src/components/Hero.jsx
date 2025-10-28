@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import heroImg from "../assets/restauranfood.jpg";
 
@@ -13,16 +14,18 @@ const Hero = () => {
             We are a family-owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Button
-            variant="primary"
-            size="lg"
-            className="text-lg font-bold tracking-wide"
-            id="hero-reserve-button"
-            data-testid="hero-reserve-button"
-            aria-label="Reserve a table at Little Lemon"
-          >
-            Reserve a Table
-          </Button>
+          <Link to="/reservations">
+            <Button
+              variant="primary"
+              size="lg"
+              className="text-lg font-bold tracking-wide"
+              id="hero-reserve-button"
+              data-testid="hero-reserve-button"
+              aria-label="Reserve a table at Little Lemon"
+            >
+              Reserve a Table
+            </Button>
+          </Link>
         </div>
 
         <div className="hero-right">

@@ -1,22 +1,25 @@
-import React from 'react'
-import logo from "../assets/Logo.svg"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from "../assets/Logo.svg";
 
 const Header = () => {
   return (
     <header className="header">
-      <img src={logo} alt="Little Lemon Logo" />
+      <Link to="/">
+        <img src={logo} alt="Little Lemon Logo" />
+      </Link>
       <nav>
         <ul className='nav-list'>
-          <li className='nav-link'><a href="/">Home</a></li>
-          <li className='nav-link'><a href="/about">About</a></li>
-          <li className='nav-link'><a href="/menu">Menu</a></li>
-          <li className='nav-link'><a href="/reservations">Reservations</a></li>
-          <li className='nav-link'><a href="/order-online">Order Online</a></li>
-          <li className='nav-link'><a href="/login">Login</a></li> 
+          <li className='nav-link'><Link to="/">Home</Link></li>
+          <li className='nav-link'><Link to="/about">About</Link></li>
+          <li className='nav-link'><Link to="/menu">Menu</Link></li>
+          <li className='nav-link'><Link to="/reservations">Reservations</Link></li>
+          <li className='nav-link'><Link to="/order-online">Order Online</Link></li>
+          <li className='nav-link'><Link to="/login">Login</Link></li> 
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

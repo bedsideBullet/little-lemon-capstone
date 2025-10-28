@@ -616,3 +616,80 @@ button:focus {
   outline: 3px solid rgba(73,94,87,0.15);
   outline-offset: 3px;
 }
+
+/* -------------------------------------------------
+   BOOKING PAGE
+   ------------------------------------------------- */
+.booking-page {
+  width: 100%;
+  min-height: 60vh;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container h1 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--color-dark-green);
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-dark-green);
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-dark-green);
+}
+
+.booking-form button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .booking-container {
+    padding: 1.5rem;
+  }
+  
+  .booking-container h1 {
+    font-size: 2rem;
+  }
+}
