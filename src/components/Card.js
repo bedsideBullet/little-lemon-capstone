@@ -12,8 +12,11 @@ const Card = ({ image, title, price, description, deliveryLink }) => {
       </div>
 
       <div className="card-content">
-        <h3>{title}</h3>
-        <span className="card-price">{price}</span>
+        <header className="card-header-group">
+            <h3>{title}</h3>
+            <span className="card-price">{price}</span>
+        </header>
+
         <p>{description}</p>
         <a href={deliveryLink} className="delivery-link">order for delivery</a>
       </div>
